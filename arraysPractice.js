@@ -5,7 +5,10 @@ var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item the given array.
 
   //Code Here
-
+var first = function(arrInput) {
+  return arrInput[0];
+}
+first(arr);
 
 //Next problem
 
