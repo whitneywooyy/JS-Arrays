@@ -49,6 +49,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
   //Code Here
 
+var reversedLooper = function(awesomeArray) {
+  for (var i = awesomeArray.length - 1; i >= 0; i--) {
+    alert(awesomeArray[i]);
+  }
+}
+reversedLooper(letters);
 
 //Next Problem
 
