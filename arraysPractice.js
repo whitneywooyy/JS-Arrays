@@ -33,6 +33,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
   //Code Here
 
+var looper = function(coolArray) {
+  for (var i = 0; i < coolArray.length; i++) {
+    alert(coolArray[i]);
+  }
+}
+looper(family);
 
 //Next problem
 
