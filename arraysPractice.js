@@ -90,6 +90,19 @@ var odds = []
 
   //Code Here
 
+var divider = function(nums2) {
+  for (var i = 0; i < nums2.length; i++) {
+    if (nums2[i] % 2 === 0) {
+      evens.push(nums2[i]);
+    }
+    else {
+      odds.push(nums2[i]);
+    }
+  }
+    console.log(evens);
+    console.log(odds);
+}
+divider(nums, evens, odds);
 
 //Next Problem
 
