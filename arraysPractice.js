@@ -64,6 +64,18 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
   //Code Here
 
+var evenFinder = function(sweetArray) {
+  for (var i = 0; i < sweetArray.length; i++) {
+    if (sweetArray[i] % 2 !== 0) {
+      console.log("Odd: " + sweetArray[i]);
+      sweetArray.splice(i, 1);
+      i--;
+    }
+  }
+  return sweetArray;
+}
+evenFinder(nums);
+
 
 //Next problem
 
