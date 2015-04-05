@@ -107,13 +107,24 @@ divider(nums, evens, odds);
 //Next Problem
 
 
-var getRandomArbitrary = function() {
-  return Math.floor(Math.random() * (30 - 0) + 0);
-}
-var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+var getRandomArbitrary = function () {
+    return Math.floor(Math.random() * (30 - 0) + 0);
+};
+var numbers = [0, 3, 4, 5, 6, 7, 9, 14, 17, 24, 25, 26, 29, 30];
 //Above your given a function that will return a random number between 0 and 30, and an array full or numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
-  //Code Here
+//Code Here
+
+var finder = function (nums) {
+    var randomNum = getRandomArbitrary();
+    for (var i = 0; i < nums.length; i++) {
+        if (nums[i] === randomNum) {
+            return true;
+        }
+    }
+    return false;
+};
+finder(numbers);
 
 
 //Next problem
