@@ -82,7 +82,8 @@ evenFinder(nums);
 
 var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 var evens = [];
-var odds = []
+var odds = [];
+
 //Write a function called divider that is given three arguments, nums, evens, and odds.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
 
@@ -90,17 +91,16 @@ var odds = []
 
   //Code Here
 
-var divider = function(nums2) {
+var divider = function(nums2, evens2, odds2) {
   for (var i = 0; i < nums2.length; i++) {
     if (nums2[i] % 2 === 0) {
-      evens.push(nums2[i]);
+      evens2.push(nums2[i]);
     }
     else {
-      odds.push(nums2[i]);
+      odds2.push(nums2[i]);
     }
   }
-    console.log(evens);
-    console.log(odds);
+    return [evens, odds];
 }
 divider(nums, evens, odds);
 
