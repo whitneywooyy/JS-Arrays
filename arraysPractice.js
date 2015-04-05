@@ -150,6 +150,7 @@ console.log(reverse(str));
 
 
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
+
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list,
   and adding new items to our list. Write a function called removeItem that is given two arguments, the first is myGroceryList, and the
@@ -162,6 +163,30 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
   //Code Here
 
+var removeFromList = "pizza";
+
+var removeItem = function(mGL, rFL) {
+    for (var i = 0; i < mGL.length; i++) {
+        if (mGL[i].toLowerCase() === rFL.toLowerCase()) {
+            // console.log(i);
+            // console.log(mGL[i]);
+            mGL.splice(i, 1);
+        }
+    }
+    return mGL;
+};
+// console.log(removeItem(myGroceryList, removeFromList));
+removeItem(myGroceryList, removeFromList);
+
+var addToList = "spaghetti";
+
+var addItem = function(mGL, aTL) {
+    myGroceryList.push(aTL);
+    return mGL;
+};
+// console.log(addItem(myGroceryList, addToList));
+addItem(myGroceryList, addToList);
+                       
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
