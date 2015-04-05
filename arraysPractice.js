@@ -136,6 +136,15 @@ var str = 'this is my sentence';
 
   //Code Here
 
+var reverse = function(forwardStr) {
+    var backwards = "";
+    for (var i = forwardStr.length - 1; i >= 0; i--) {
+        backwards = backwards + forwardStr[i];
+    }
+    return backwards;
+};
+console.log(reverse(str));
+
 
 //Next Problem
 
