@@ -258,6 +258,17 @@ for(var i = 0; i < num2; i++){
 
   //Code Here
 
+var longestArr = function(longArr1, longArr2) {
+    if (longArr1.length > longArr2.length) {
+        return longArr1;    
+    }
+    else {
+        return longArr2;    
+    }
+};
+// console.log(longestArr(arr1, arr2));
+longestArr(arr1, arr2);
+
 
 /*As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example)
@@ -265,3 +276,20 @@ for(var i = 0; i < num2; i++){
 */
 
   //Code Here
+
+var combo = [];
+
+var both = function(combine1, combine2) {
+    console.log("Array 1: " + combine1);
+    console.log("Array 2: " + combine2);
+    
+    for (var i = 0; i < combine1.length; i++) {
+        combo.push(combine1[i]);    
+    }
+    for (var j = 0; j < combine2.length; j++) {
+        combo.push(combine2[j]);    
+    }   
+    return combo;
+};
+both(arr1, arr2);
+// console.log(both(arr1, arr2));
