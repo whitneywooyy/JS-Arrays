@@ -220,6 +220,23 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
   //Code Here
 
+var added10 = [];
+
+var addTen = function(plus10) {
+    for (var i = 0; i < plus10.length; i++) {
+        var integer = parseInt(plus10[i]);
+        // console.log(integer);
+        var newNum = integer + 10;
+        // console.log(newNum);
+        added10.push(newNum);      
+    }
+    // console.log(added10); 
+    return added10;
+};
+
+console.log(addTen(numbers));
+
+
 
 
 //Next Problem
